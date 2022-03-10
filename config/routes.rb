@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  get "/enter_name" => "params_example#enter_name"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/name_game", controller: "games", action: "name_game"
 
-  get "/query_params" => "params_example#query_params"
+  get "/number_game", controller: "games", action: "number_game"
 end

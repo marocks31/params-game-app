@@ -1,9 +1,9 @@
 class ParamsExampleController < ApplicationController
 
 
-  def query_params
-    input_name = params["name"]
-    render json: {message: "#{input_name}"
+  def enter_name
+    input_name = params["baby"]
+    render json: {message: "Your name is #{input_name}."
   }
-  end
+  end 
 end 
